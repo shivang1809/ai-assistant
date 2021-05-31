@@ -29,11 +29,11 @@ def command():
     r=sr.Recognizer()
     with sr.Microphone() as source:
         print ("lisning.....")
-        playsound('assistant\source\start.wav')
+        playsound('start.wav')
         r.pause_threshold=0.6
         audio=r.listen(source)
         print("recognising....")
-        playsound('assistant\source\stop.wav')
+        playsound('stop.wav')
         
     try:
          
