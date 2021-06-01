@@ -6,7 +6,7 @@ import pyttsx3
 import platform
 import cpuinfo
 import webbrowser
-import subprocess
+
 import sys
 import time
 import smtplib
@@ -65,10 +65,7 @@ def command():
         elif ask==("processor info"):
             print(platform.processor())
             text=(platform.processor()) 
-        elif ask==("open notepad") or ask==("open Notepad"):
-            subprocess.call('notepad.exe')
-        elif ask==("open calculator") or ask==("open Calculator"):
-            subprocess.call('calc.exe')
+
         elif ask==("open google" )or ask==("open Google"):
             webbrowser.open('https://google.com')
         elif ask== ("open youtube") or ask== ("open YouTube"):
