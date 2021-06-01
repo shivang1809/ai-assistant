@@ -6,7 +6,6 @@ import pyttsx3
 import platform
 import cpuinfo
 import webbrowser
-
 import sys
 import time
 import smtplib
@@ -65,7 +64,6 @@ def command():
         elif ask==("processor info"):
             print(platform.processor())
             text=(platform.processor()) 
-
         elif ask==("open google" )or ask==("open Google"):
             webbrowser.open('https://google.com')
         elif ask== ("open youtube") or ask== ("open YouTube"):
